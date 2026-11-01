@@ -1,0 +1,152 @@
+.about-section {
+  min-height: 100vh;
+  padding: 80px 9%;
+
+  background:
+    radial-gradient(
+      circle at 10% 20%,
+      rgba(124, 58, 237, 0.15),
+      transparent 35%
+    ),
+    #080817;
+}
+
+.about-heading {
+  text-align: center;
+  margin-bottom: 55px;
+}
+
+.section-tag {
+  color: #c084fc;
+  font-size: 12px;
+  letter-spacing: 3px;
+  font-weight: 700;
+}
+
+.about-heading h1 {
+  font-size: 48px;
+  margin: 15px 0;
+}
+
+.about-heading h1 span {
+  background: linear-gradient(
+    90deg,
+    #c084fc,
+    #67e8f9
+  );
+
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.about-heading p {
+  color: #aaa8c5;
+  font-size: 15px;
+}
+
+.about-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.about-card {
+  padding: 30px;
+  border-radius: 22px;
+
+  background: rgba(255, 255, 255, 0.045);
+  border: 1px solid rgba(167, 139, 250, 0.18);
+
+  backdrop-filter: blur(15px);
+
+  transition: 0.3s ease;
+}
+
+.about-card:hover {
+  transform: translateY(-6px);
+  border-color: rgba(192, 132, 252, 0.55);
+  box-shadow: 0 15px 40px rgba(124, 58, 237, 0.12);
+}
+
+.about-card h2 {
+  color: #ddd6fe;
+  font-size: 21px;
+  margin-bottom: 20px;
+}
+
+.about-card p {
+  color: #aaa8c5;
+  font-size: 14px;
+  line-height: 1.9;
+  margin-bottom: 14px;
+}
+
+/* EDUCATION */
+
+.education-item {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.education-dot {
+  min-width: 11px;
+  height: 11px;
+  margin-top: 7px;
+  border-radius: 50%;
+  background: #a78bfa;
+  box-shadow: 0 0 12px #8b5cf6;
+}
+
+.education-item h3 {
+  color: #ffffff;
+  font-size: 15px;
+  margin-bottom: 8px;
+}
+
+.education-item p {
+  margin-bottom: 5px;
+}
+
+.education-item span:not(.education-dot) {
+  font-size: 12px;
+  color: #67e8f9;
+}
+
+/* INTERESTS */
+
+.interest-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.interest-list span {
+  padding: 10px 15px;
+  border-radius: 25px;
+
+  color: #d8b4fe;
+  background: rgba(139, 92, 246, 0.13);
+  border: 1px solid rgba(167, 139, 250, 0.2);
+
+  font-size: 12px;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 750px) {
+  .about-container {
+    grid-template-columns: 1fr;
+  }
+
+  .about-section {
+    padding: 60px 6%;
+  }
+
+  .about-heading h1 {
+    font-size: 38px;
+  }
+}
