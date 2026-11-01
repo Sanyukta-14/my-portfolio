@@ -23,8 +23,9 @@ function Contact() {
           <div className="contact-detail">
             <span className="contact-icon">✉️</span>
             <div>
-              <h3>Email</h3>
-              <a href="mailto:sanyuktanagvekar7@gmail.com">
+              <a href="https://mail.google.com/mail/?view=cm&fs=1&to=sanyuktanagvekar7@gmail.com"
+                target="_blank"
+                rel="noreferrer">
                 sanyuktanagvekar7@gmail.com
               </a>
             </div>
